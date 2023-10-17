@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorting Visualizer || Kelompok 3</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="header">
+            <h1>Sorting and Searching Visualizer</h1>
+            <p>Let's make sorting and searching more fun!</p>
+        </div>
+        <div class="pages">
+            <a href="index.html">Sorting</a>
+            <a href="search.html">Searching</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="menu">
+            <button id="new_arr">New Array</button>
+            <div class="input_range">
+                <div class="size">
+                    <input type="range" id="arr_size" min="5" max="100" step="1" value="60" orient="vertical">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                        clip-rule="evenodd">
+                        <path
+                            d="M0 22h1v-5h4v5h2v-10h4v10h2v-15h4v15h2v-21h4v21h1v1h-24v-1zm4-4h-2v4h2v-4zm6-5h-2v9h2v-9zm6-5h-2v14h2v-14zm6-6h-2v20h2v-20z" />
+                    </svg>
+                </div>
+                <div class="speed">
+                    <input type="range" id="sort_speed" min="20" max="300" step="10" value="60" orient="vertical">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                        clip-rule="evenodd">
+                        <path
+                            d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 11h6v1h-7v-9h1v8z" />
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="visual">
+            <div class="wrap_container">
+                <div class="algo_name">
+                    <p id="algo">Sorting</p>
+                </div>
+                <div class="container"></div>
+            </div>
+            <div class="time">
+                <div class="exectime">
+                    <p>Time Execution :</p>
+                    <p id="timeExec"></p>
+                </div>
+                <div class="asimtotic">
+                    <p>Big-O Notation :</p>
+                    <p id="notation"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="options">
+            <div class="option_text">
+                <p>Sorting Algorithm</p>
+                <hr width="150px">
+            </div>
+            <div class="sort_button">
+                <button class="bubbleSort">Bubble Sort</button>
+                <button class="selectionSort">Selection Sort</button>
+                <button class="insertionSort">Insertion Sort</button>
+                <button class="mergeSort">Merge Sort</button>
+                <button class="quickSort">Quick Sort</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script dari setiap sort -->
+    <script src="sort/script_sort.js"></script>
+    <script src="sort/bubble_sort.js"></script>
+    <script src="sort/selection_sort.js"></script>
+    <script src="sort/insertion_sort.js"></script>
+    <script src="sort/merge_sort.js"></script>
+    <script src="sort/quick_sort.js"></script>
+</body>
+
+</html>

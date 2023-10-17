@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: grey;
+  font-size: 0.8em;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  gap: 20%;
+  margin-bottom: 30px;
+}
+
+.header {
+  font-size: 0.8em;
+}
+
+.pages {
+  font-size: 1.1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.pages > * {
+  background-color: aquamarine;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: white;
+  padding: 20px;
+  height: 440px;
+}
+
+.input > * {
+  display: inline-block;
+}
+
+.sort_visual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.time {
+  font-size: 1.5em;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 700px;
+  gap: 50px;
+}
+
+.time > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sort_options {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 440px;
+  width: 200px;
+  gap: 20px;
+}
+
+.container {
+  background-color: white;
+  height: 350px;
+  width: 700px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transition: 2s all ease;
+  padding: 30px;
+}
+
+.bar {
+  width: 15px;
+  background-color: rgb(14, 14, 14);
+  margin: 1px;
+  transition: 0.1s all ease;
+}
+
+.bar {
+  background-color: rgb(14, 14, 14);
+  cursor: pointer;
+}
+
+button {
+  padding: 10px;
+  font-size: 1em;
+  width: 130px;
+}
