@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sudoku Visualizer</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="header">
+            <h1>DSA Visualizer</h1>
+            <p>Let's make learning data structures and algorithms more fun!</p>
+        </div>
+        <div class="pages">
+            <a href="index.html">Sorting</a>
+            <a href="search.html">Searching</a>
+            <a href="graph.html">Graph</a>
+            <a href="puzzle.html">Puzzle</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="menu">
+            <button id="new_puzzle">New Puzzle</button>
+            <button id="check_puzzle">Check Solution</button>
+            <button id="solve_puzzle">Show Solution</button>
+        </div>
+
+        <div class="visual">
+            <div class="wrap_container">
+                <div class="algo_name">
+                    <p id="algo">Sudoku</p>
+                </div>
+                <div id="sudoku-grid" class="grid"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./puzzle/puzzle.js"></script>
+</body>
+
+</html>

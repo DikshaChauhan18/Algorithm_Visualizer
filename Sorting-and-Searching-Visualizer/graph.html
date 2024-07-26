@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Graph Visualizer</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="header">
+            <h1>Graph Visualizer</h1>
+            <p>Let's explore graph algorithms visually!</p>
+        </div>
+        <div class="pages">
+            <a href="index.html">Sorting</a>
+            <a href="search.html">Searching</a>
+            <a href="graph.html">Graph</a>
+            <a href="puzzle.html">Puzzles</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="menu">
+            <button id="new_grid">New Grid</button>
+            <div class="input_range">
+                <div class="size">
+                    <label for="grid_size" class="label">Grid Size</label>
+                    <input type="range" id="grid_size" min="5" max="50" step="1" value="20" orient="vertical">
+                </div>
+                <div class="speed">
+                    <label for="vis_speed" class="label">Speed</label>
+                    <input type="range" id="vis_speed" min="20" max="300" step="10" value="100" orient="vertical">
+                </div>
+            </div>
+        </div>
+
+        <div class="visual">
+            <div class="wrap_container">
+                <div class="algo_name">
+                    <p id="algo">Graph Algorithm</p>
+                </div>
+                <div id="grid" class="grid"></div>
+            </div>
+            <div class="time">
+                <div class="exectime">
+                    <p>Time Execution :</p>
+                    <p id="timeExec"></p>
+                </div>
+                <div class="asimtotic">
+                    <p>Big-O Notation :</p>
+                    <p id="notation"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="options">
+            <div class="option_text">
+                <p>Graph Algorithm</p>
+                <hr width="150px">
+            </div>
+            <div class="graph_button">
+                <button class="bfs">BFS</button>
+                <button class="dfs">DFS</button>
+                <button class="dijkstra">Dijkstra's</button>
+                <button class="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="graph/graph.js"></script>
+</body>
+</html>

@@ -19,11 +19,16 @@ Searching Algorithm :<br>
 1. Linear Search<br>
 2. Binary Search<br>
 
+## Graph Visualizer
+Graph Algorithm :<br>
+1. BFS<br>
+2. DFS<br>
+3. Dijktra's<br>
+
 ## How it looks?
 Sorting visualizer :<br>
 <img src="img/ss1.png"><br><br>
-Searching visualizer :<br>
-<img src="img/ss2.png"><br>
+
 
 ## Still in development:)
 Adding more algorithm!

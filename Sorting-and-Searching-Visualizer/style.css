@@ -241,3 +241,71 @@ button:disabled {
   color: rgb(193, 193, 193);
   background-color: #19466d;
 }
+.grid {
+  display: grid;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(211, 211, 211);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid #2c74b3;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cell.start {
+  background-color: green;
+}
+
+.cell.end {
+  background-color: red;
+}
+
+.cell.visited {
+  background-color: lightblue;
+}
+
+.cell.path {
+  background-color: yellow;
+}
+
+/* Ensure each cell has the correct dimensions */
+.sudoku-cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure the grid container has the correct dimensions and uses CSS Grid */
+#sudoku-grid {
+  display: grid;
+  grid-template-columns: repeat(9, 40px); /* 9 columns of 40px each */
+  grid-template-rows: repeat(9, 40px); /* 9 rows of 40px each */
+  gap: 0;
+  border: 2px solid #000;
+  width: 400px; /* 9 cells * 40px */
+  height: 400px; /* 9 cells * 40px */
+}
+
+/* Highlight incorrect cells */
+.sudoku-cell.incorrect {
+  background-color: lightcoral;
+}
+
+/* Fixed cells style */
+.sudoku-cell.fixed {
+  background-color: lightgray;
+}
+
